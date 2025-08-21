@@ -3,87 +3,74 @@ import CompatibilityList from "~/components/compatibility-list.astro";
 import ContentSection from "~/components/content-section.astro";
 import type { CompatibilityItem } from "~/types";
 
-const frameworks: Array<CompatibilityItem> = [
+const languages: Array<CompatibilityItem> = [
   {
-    title: "React",
-    icon: "frameworks/react",
-    url: "https://reactjs.org/",
+    title: "Python",
+    icon: "logos:python",
+    url: "https://www.python.org/",
   },
   {
-    title: "Preact",
-    icon: "frameworks/preact",
-    url: "https://preactjs.com/",
+    title: "Java",
+    icon: "logos:java",
+    url: "https://www.java.com/",
   },
   {
-    title: "Svelte",
-    icon: "frameworks/svelte",
-    url: "https://svelte.dev/",
+    title: "C#",
+    icon: "logos:c-sharp",
+    url: "https://learn.microsoft.com/en-us/dotnet/csharp/",
   },
   {
-    title: "Vue",
-    icon: "frameworks/vue",
-    url: "https://vuejs.org/",
+    title: "JavaScript",
+    icon: "logos:javascript",
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
-    title: "Solid",
-    icon: "frameworks/solid",
-    url: "https://www.solidjs.com/",
-  },
-  {
-    title: "Lit",
-    icon: "frameworks/lit",
-    url: "https://lit.dev/",
+    title: "TypeScript",
+    icon: "logos:typescript-icon",
+    url: "https://www.typescriptlang.org/",
   },
 ];
 
-const platforms: Array<CompatibilityItem> = [
+const tools: Array<CompatibilityItem> = [
   {
-    title: "Netlify",
-    icon: "platforms/netlify",
-    url: "https://www.netlify.com/",
-  },
-  {
-    title: "Vercel",
-    icon: "platforms/vercel",
-    url: "https://vercel.com/",
-  },
-  {
-    title: "Cloudflare",
-    icon: "fa-brands:cloudflare",
-    url: "https://pages.cloudflare.com/",
-  },
-  {
-    title: "Render",
-    icon: "platforms/render",
-    url: "https://render.com/",
+    title: "Unity",
+    icon: "logos:unity",
+    url: "https://unity.com/",
   },
   {
     title: "GitHub",
     icon: "fa-brands:github",
-    url: "https://pages.github.com/",
+    url: "https://github.com/",
   },
   {
-    title: "GitLab",
-    icon: "fa-brands:gitlab",
-    url: "https://docs.gitlab.com/ee/user/project/pages/",
+    title: "VS Code",
+    icon: "logos:visual-studio-code",
+    url: "https://code.visualstudio.com/",
+  },
+  {
+    title: "Blender",
+    icon: "logos:blender",
+    url: "https://www.blender.org/",
+  },
+  {
+    title: "Linux",
+    icon: "logos:linux-tux",
+    url: "https://www.linux.org/",
   },
 ];
 ---
 
-<ContentSection title="Compatibility" id="compatibility">
+<ContentSection title="Languages" id="languages">
   <Fragment slot="lead">
-    Astro <span class="text-primary">plays nice</span>. Bring your own UI{" "}
-    <span class="text-primary">framework</span>
-    and deploy to your favorite <span class="text-primary">platform</span>.
   </Fragment>
   <CompatibilityList
-    items={frameworks}
-    title="Frameworks"
-    url="https://docs.astro.build/core-concepts/framework-components/"
+    items={languages}
+    title="Programming Languages"
+    url="#"
   />
   <CompatibilityList
-    items={platforms}
-    title="Platforms"
-    url="https://docs.astro.build/guides/deploy/"
+    items={tools}
+    title="Tools & Platforms"
+    url="#"
   />
 </ContentSection>

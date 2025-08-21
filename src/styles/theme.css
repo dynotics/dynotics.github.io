@@ -4,8 +4,9 @@
   --color-secondary: #5766a1;          /* indigo */
   --color-text: #f0f8ff;               /* off-white */
   --color-text-offset: #c6e5ea;        /* bluer off-white */
-  --color-background: #0a0a0a;         /* near-black */
+  --color-background: #09090a;         /* near-black */
   --color-background-offset: #1a1a1a;  /* slightly lighter near-black */
+  --color-header: #111113; 
   --color-border: #5766a1;             /* indigo */
 }
 
@@ -15,7 +16,9 @@
   --color-secondary: #c6e5ea;          /* light cyan */
   --color-text: #f0f8ff;               /* off-white */
   --color-text-offset: #c6e5ea;        /* light cyan-ish */
-  --color-background: #0a0a0a;         /* near-black */
+  --color-background: #000000;         /* near-black */
   --color-background-offset: #121212;  /* slightly lighter black */
+  --color-header: #1a1a1a;
   --color-border: #424582;             /* navy */
 }
+
