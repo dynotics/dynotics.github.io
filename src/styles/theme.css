@@ -1,21 +1,21 @@
 /* default theme */
 [data-theme="light"] {
-  --color-primary: #6780ac;        /* muted mid-blue (anchor tone) */
-  --color-secondary: #5766a1;      /* indigo */
-  --color-text: #f0f8ff;             /* off-white */
-  --color-text-offset: #c6e5ea;      /* bluer off-white */
-  --color-background: #37333a;      /* muted charcoal */
-  --color-background-offset: #46414a; /* slightly lighter charcoal */
-  --color-border: #5766a1;         
+  --color-primary: #6780ac;            /* muted mid-blue (anchor tone) */
+  --color-secondary: #5766a1;          /* indigo */
+  --color-text: #f0f8ff;               /* off-white */
+  --color-text-offset: #c6e5ea;        /* bluer off-white */
+  --color-background: #0a0a0a;         /* near-black */
+  --color-background-offset: #1a1a1a;  /* slightly lighter near-black */
+  --color-border: #5766a1;             /* indigo */
 }
 
 /* dark theme (may implement later) */
 [data-theme="dark"] {
-  --color-primary: #8ea8c1;        /* softer mid-blue */
-  --color-secondary: #c6e5ea;      /* light cyan */
-  --color-text: #f0f8ff;             
-  --color-text-offset: #c6e5ea;      
-  --color-background: #37333a;      
-  --color-background-offset: #2b2b2b; /* darker charcoal */
-  --color-border: #424582;         /* navy */
+  --color-primary: #8ea8c1;            /* softer mid-blue */
+  --color-secondary: #c6e5ea;          /* light cyan */
+  --color-text: #f0f8ff;               /* off-white */
+  --color-text-offset: #c6e5ea;        /* light cyan-ish */
+  --color-background: #0a0a0a;         /* near-black */
+  --color-background-offset: #121212;  /* slightly lighter black */
+  --color-border: #424582;             /* navy */
 }

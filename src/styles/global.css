@@ -8,5 +8,5 @@ a,
 
 .gradient-text {
   @apply bg-clip-text text-transparent;
-  @apply bg-gradient-to-r from-[#c6e5ea] via-[#6780ac] to-[#362f63];
+  @apply bg-gradient-to-r from-[#c6e5ea] via-[#8ea8c1] to-[#6780ac];
 }
