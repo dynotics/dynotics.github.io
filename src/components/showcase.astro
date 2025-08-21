@@ -1,28 +1,16 @@
 ---
 import ContentSection from "~/components/content-section.astro";
 import { Image } from "astro:assets";
-
-/* showcase of game projects */
-
-import popImg from "~/assets/showcase/popordrop.png";
-import vanishImg from "~/assets/showcase/thevanishingenigma.png";
-import curupiraImg from "~/assets/showcase/curupira.jpg";
-import nunImg from "~/assets/showcase/nunofyourbusiness.png";
-import piusImg from "~/assets/showcase/pius.png";
-
-const projects = [
-  { title: "Pop or Drop", image: popImg },
-  { title: "The Vanishing Enigma", image: vanishImg },
-  { title: "Curupira", image: curupiraImg },
-  { title: "Nun of Your Business", image: nunImg },
-  { title: "Pius", image: piusImg },
-];
+import { projects } from "~/data/projects";
 ---
 
 <ContentSection title="Projects" id="projects">
   <div class="flex flex-wrap justify-center gap-4">
     {projects.map((project) => (
-      <div class="group relative overflow-hidden border border-zinc-800 bg-zinc-900 shadow-lg w-full sm:w-[48%] md:w-[32%]">
+      <a
+        href={`/projects/${project.slug}`}
+        class="group relative overflow-hidden border border-zinc-800 bg-zinc-900 shadow-lg w-full sm:w-[48%] md:w-[32%]"
+      >
         <Image
           src={project.image}
           alt={`A screenshot of ${project.title}`}
@@ -33,7 +21,7 @@ const projects = [
         <h3 class="absolute inset-0 flex items-center justify-center text-4xl font-extrabold text-white uppercase text-center leading-tight px-2">
           {project.title}
         </h3>
-      </div>
+      </a>
     ))}
   </div>
 </ContentSection>
