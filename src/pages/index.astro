@@ -8,10 +8,8 @@ import "~/styles/index.css";
 
 const site = Astro.site;
 const description = "Portfolio of Dylan T. Chin";
+const ogImage = `${site}social-v2.jpg`;
 ---
-
-<!doctype html>
-<html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
 
 <!doctype html>
 <html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
@@ -24,11 +22,15 @@ const description = "Portfolio of Dylan T. Chin";
     <title>Dylan T. Chin</title>
     <meta name="description" content={description} />
 
+    <!-- social media -->
     <meta property="og:title" content="Dylan T. Chin" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={site} />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={ogImage} />
+
+    
+    <meta name="twitter:card" content="summary_large_image" />
     
     <!-- initialize theme -->
     <script is:inline>
